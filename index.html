@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding CRUD</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Social Media Rep...</h1>
+    <div class="container">
+        <div class="left-sec">
+            <form id="form">
+                <label for="">Write anything you want here</label>
+                <br></br>
+                <textarea name="" id="input" cols="30" rows="10"></textarea>
+                <br></br>
+                <div id="errmsg"></div>
+                <button type="submit">Post</button>
+            </form>
+        </div>
+        <div class="right-sec">
+            <h3>Your outputs come here</h3>
+            <div id="posts">
+                <div>
+                    <p>Post 1</p>
+                    <span class="options">
+                        <i onClick="editPost(this)" class="fa-solid fa-pen-to-square"></i>
+                        <i onClick="deletePost(this)" class="fa-solid fa-trash-can"></i>
+                    </span>
+                </div>
+                <div>
+                    <p>Post 2</p>
+                    <span class="options">
+                        <i onClick="editPost(this)" class="fa-solid fa-pen-to-square"></i>
+                        <i onClick="deletePost(this)" class="fa-solid fa-trash-can"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+<script src="https://kit.fontawesome.com/3b9c76ecc4.js" crossorigin="anonymous"></script>
+</html>
